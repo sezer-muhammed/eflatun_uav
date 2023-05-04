@@ -26,11 +26,11 @@ def convert_string_to_int(string: str, /, *, base: Optional[int] = 256) -> int:
 
     Example:
         >>> convert_string_to_int("Hello, World!")
-        5030
-        >>> convert_string_to_int("Hello, World!", base=16)
-        10
-        >>> convert_string_to_int("Hello, World!", base=36)
-        34
+        157
+        >>> convert_string_to_int("Hello, World")
+        84
+        >>> convert_string_to_int("Hello, World!", base = 36)
+        13
     """
     if base is not None and not isinstance(base, int):
         raise ValueError(f"Base must be an integer, not {type(base)}")

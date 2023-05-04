@@ -1,15 +1,11 @@
 import pytest
 from eflatun_uav.helpers.number_generators import convert_string_to_int
 
-
-@pytest.mark.parametrize(
-    "input_string,base",
-    [
-        ("", 256),
-        ("abcde", 256),
-        ("a" * 20, 16),
-    ],
-)
+@pytest.mark.parametrize("input_string,base", [
+    ("", 256),
+    ("abcde", 256),
+    ("a" * 20, 16),
+])
 def test_convert_string_to_int(input_string, base):
     result = convert_string_to_int(input_string, base=base)
     assert isinstance(result, int)

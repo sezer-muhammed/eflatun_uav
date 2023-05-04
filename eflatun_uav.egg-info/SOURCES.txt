@@ -15,3 +15,5 @@ tests/__init__.py
 tests/test_object.py
 tests/test_optimizer.py
 tests/test_tracker.py
+tests/test_helpers/__init__.py
+tests/test_helpers/test_number_generators.py

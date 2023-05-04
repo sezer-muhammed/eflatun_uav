@@ -4,10 +4,11 @@ This module creates numbers for given variable type of inputs
 
 from typing import Optional
 
-def convert_string_to_int(string: str, /, *, base: Optional[int] = 256) -> int:
+
+def convert_string_to_int(string: str, *, base: Optional[int] = 256) -> int:
     """
     Converts a string to an integer representation using the specified base.
-    
+
     This function calculates two totals, one for the forward direction of the string
     and another for the reverse direction. The final result is the sum of both totals
     modulo the given base.
@@ -37,8 +38,12 @@ def convert_string_to_int(string: str, /, *, base: Optional[int] = 256) -> int:
     if base in [0, 1, -1]:
         raise ValueError("Base cannot be 0, -1 or 1")
 
-
-    total_forward = sum(ord(letter) * index * index for index, letter in enumerate(string))
-    total_reverse = sum(ord(letter) * index *index for index, letter in enumerate(string[::-1], start=1))
+    total_forward = sum(
+        ord(letter) * index * index for index, letter in enumerate(string)
+    )
+    total_reverse = sum(
+        ord(letter) * index * index
+        for index, letter in enumerate(string[::-1], start=1)
+    )
 
     return int((total_reverse + total_forward) % base)
