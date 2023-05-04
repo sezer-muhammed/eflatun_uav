@@ -8,11 +8,11 @@ setup(
     install_requires=[
         
     ],
-    extras_require={{
+    extras_require={
         "dev": [
-            "pytest",
+            
         ],
-    }},
+    },
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
@@ -31,9 +31,9 @@ setup(
     long_description=open("README.md", encoding="utf8").read(),
     long_description_content_type="text/markdown",
     url="",
-    project_urls={{
+    project_urls={
         "Bug Tracker": "",
         "Documentation": "",
         "Source Code": "",
-    }},
+    },
 )
