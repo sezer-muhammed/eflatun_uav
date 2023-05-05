@@ -20,7 +20,7 @@ release = '2023'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['sphinx.ext.autodoc','sphinx.ext.napoleon', 'sphinx.ext.autosummary', 'sphinx.ext.intersphinx',]
+extensions = ['sphinx.ext.autodoc','sphinx.ext.napoleon', 'sphinx.ext.autosummary',]
 
 autodoc_default_options = {
     'members': True,
