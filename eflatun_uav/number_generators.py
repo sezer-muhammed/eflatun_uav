@@ -48,26 +48,23 @@ def convert_string_to_int(string: str, *, base: Optional[int] = 256) -> int:
 
     return int((total_reverse + total_forward) % base)
 
-class TesterClass:
-    """
-    This is a summary for the TesterClass.
+class TesterClass():
+    """_summary_
     """
 
     def __init__(self) -> None:
-        """
-        Initialize the TesterClass instance.
+        """_summary_
         """
         pass
 
-    def tester__(self, adam: int, kadin: float) -> str:
-        """
-        This is a summary for the tester__ method.
+    def tester__(self, adam:int, kadin:float) -> str:
+        """_summary_
 
         Args:
-            adam (int): A description for the 'adam' parameter.
-            kadin (float): A description for the 'kadin' parameter.
+            adam (int): _description_
+            kadin (float): _description_
 
         Returns:
-            str: A description for the return value.
+            string: _description_
         """
         return "asd"
