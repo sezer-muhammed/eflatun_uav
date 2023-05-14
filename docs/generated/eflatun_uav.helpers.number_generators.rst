@@ -13,17 +13,12 @@ eflatun\_uav.helpers.number\_generators
 
    .. autosummary::
    
+      convert_string_to_float
       convert_string_to_int
    
    
 
    
-   
-   .. rubric:: Classes
-
-   .. autosummary::
-   
-      TesterClass
    
    
 

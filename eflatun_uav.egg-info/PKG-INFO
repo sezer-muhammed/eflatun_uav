@@ -19,3 +19,5 @@ Classifier: Programming Language :: Python :: 3.11
 Requires-Python: >=3.7
 Description-Content-Type: text/markdown
 Provides-Extra: dev
+
+[![Documentation Status](https://readthedocs.org/projects/eflatun-uav/badge/?version=latest)](https://eflatun-uav.readthedocs.io/en/latest/?badge=latest)

@@ -27,6 +27,9 @@
    :toctree:
    :recursive:
 
+   eflatun_uav.filters
    eflatun_uav.helpers
-   eflatun_uav.number_generators
+   eflatun_uav.objects
+   eflatun_uav.optimizers
+   eflatun_uav.trackers
 

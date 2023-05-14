@@ -4,13 +4,10 @@ This module creates numbers for given variable type of inputs
 
 from typing import Optional
 
-def convert_string_to_int(string: str, /, *, base: Optional[int] = 256) -> int:
+
+def convert_string_to_int(string: str, *, base: Optional[int] = 256) -> int:
     """
-    Converts a string to an integer representation using the specified base.
-    
-    This function calculates two totals, one for the forward direction of the string
-    and another for the reverse direction. The final result is the sum of both totals
-    modulo the given base.
+    Converts a string to an deterministicly random integer representation using the specified base.
 
     Works better for texts longer than 5 letters.
 
@@ -37,8 +34,45 @@ def convert_string_to_int(string: str, /, *, base: Optional[int] = 256) -> int:
     if base in [0, 1, -1]:
         raise ValueError("Base cannot be 0, -1 or 1")
 
-
-    total_forward = sum(ord(letter) * index * index for index, letter in enumerate(string))
-    total_reverse = sum(ord(letter) * index *index for index, letter in enumerate(string[::-1], start=1))
+    total_forward = sum(
+        ord(letter) * index * index for index, letter in enumerate(string)
+    )
+    total_reverse = sum(
+        ord(letter) * index * index
+        for index, letter in enumerate(string[::-1], start=1)
+    )
 
     return int((total_reverse + total_forward) % base)
+
+def convert_string_to_float(string: str) -> float:
+    """
+    Converts a string to a deterministic random float representation between 0 and 1.
+
+    Works better for texts longer than 5 letters.
+
+    Args:
+        string (str): The input string to be converted to a float.
+
+    Returns:
+        float: The float representation of the input string between 0 and 1.
+
+    Example:
+        >>> convert_string_to_float("Hello, World")  
+        0.3350260018341942
+        >>> convert_string_to_float("Hi, World?")     
+        0.8893743173684925
+        >>> convert_string_to_float("Hi, World")  
+        0.03764671504177386
+    """
+    total_forward = sum(
+        ord(letter) * index * index for index, letter in enumerate(string)
+    )
+    total_reverse = sum(
+        ord(letter) * index * index
+        for index, letter in enumerate(string[::-1], start=1)
+    )
+
+    frac = (total_reverse + 1) / (total_forward + 1)
+    total = ((total_reverse + total_forward) * frac) % 1
+
+    return total

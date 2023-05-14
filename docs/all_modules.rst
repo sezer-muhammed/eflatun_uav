@@ -1,6 +1,3 @@
-All Modules
-===========
-
 .. autosummary::
    :toctree: generated
    :recursive:

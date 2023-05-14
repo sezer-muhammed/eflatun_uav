@@ -1,8 +1,8 @@
-PWD d:/github/eflatun_uav/docs/_build/latex
+PWD D:/github/eflatun_uav/docs/_build/latex
 INPUT c:/texlive/2022/texmf.cnf
 INPUT c:/texlive/2022/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT d:/github/eflatun_uav/docs/_build/latex/eflatunuav.tex
+INPUT eflatunuav.tex
 OUTPUT eflatunuav.log
 INPUT ./sphinxmanual.cls
 INPUT ./sphinxmanual.cls
@@ -1157,8 +1157,6 @@ INPUT c:/texlive/2022/texmf-dist/tex/latex/txfonts/t1txtt.fd
 INPUT c:/texlive/2022/texmf-dist/tex/latex/txfonts/t1txtt.fd
 INPUT c:/texlive/2022/texmf-dist/tex/latex/txfonts/t1txtt.fd
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/txfonts/t1xttsl.tfm
-INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/tex-gyre/ec-qtmr.tfm
-INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/tex-gyre/ec-qhvr.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/txfonts/t1xbtt.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/txfonts/t1xtt.tfm
 INPUT c:/texlive/2022/texmf-dist/tex/latex/tex-gyre/ts1qtm.fd
@@ -1166,6 +1164,8 @@ INPUT c:/texlive/2022/texmf-dist/tex/latex/tex-gyre/ts1qtm.fd
 INPUT c:/texlive/2022/texmf-dist/tex/latex/tex-gyre/ts1qtm.fd
 INPUT c:/texlive/2022/texmf-dist/tex/latex/tex-gyre/ts1qtm.fd
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/tex-gyre/ts1-qtmr.tfm
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/tex-gyre/ec-qtmr.tfm
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/tex-gyre/ec-qhvr.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/txfonts/t1xtt.tfm
 INPUT ./eflatunuav.ind
 INPUT eflatunuav.ind

@@ -1,16 +1,18 @@
-\indexentry{module@\spxentry{module}!eflatun\_uav@\spxentry{eflatun\_uav}|hyperpage}{1}
-\indexentry{eflatun\_uav@\spxentry{eflatun\_uav}!module@\spxentry{module}|hyperpage}{1}
-\indexentry{module@\spxentry{module}!eflatun\_uav.helpers@\spxentry{eflatun\_uav.helpers}|hyperpage}{1}
-\indexentry{eflatun\_uav.helpers@\spxentry{eflatun\_uav.helpers}!module@\spxentry{module}|hyperpage}{1}
-\indexentry{module@\spxentry{module}!eflatun\_uav.helpers.number\_generators@\spxentry{eflatun\_uav.helpers.number\_generators}|hyperpage}{1}
-\indexentry{eflatun\_uav.helpers.number\_generators@\spxentry{eflatun\_uav.helpers.number\_generators}!module@\spxentry{module}|hyperpage}{1}
-\indexentry{TesterClass (class in eflatun\_uav.helpers.number\_generators)@\spxentry{TesterClass}\spxextra{class in eflatun\_uav.helpers.number\_generators}|hyperpage}{2}
-\indexentry{\_\_init\_\_() (eflatun\_uav.helpers.number\_generators.TesterClass method)@\spxentry{\_\_init\_\_()}\spxextra{eflatun\_uav.helpers.number\_generators.TesterClass method}|hyperpage}{2}
-\indexentry{tester\_\_() (eflatun\_uav.helpers.number\_generators.TesterClass method)@\spxentry{tester\_\_()}\spxextra{eflatun\_uav.helpers.number\_generators.TesterClass method}|hyperpage}{2}
-\indexentry{convert\_string\_to\_int() (in module eflatun\_uav.helpers.number\_generators)@\spxentry{convert\_string\_to\_int()}\spxextra{in module eflatun\_uav.helpers.number\_generators}|hyperpage}{2}
-\indexentry{module@\spxentry{module}!eflatun\_uav.number\_generators@\spxentry{eflatun\_uav.number\_generators}|hyperpage}{3}
-\indexentry{eflatun\_uav.number\_generators@\spxentry{eflatun\_uav.number\_generators}!module@\spxentry{module}|hyperpage}{3}
-\indexentry{TesterClass (class in eflatun\_uav.number\_generators)@\spxentry{TesterClass}\spxextra{class in eflatun\_uav.number\_generators}|hyperpage}{3}
-\indexentry{\_\_init\_\_() (eflatun\_uav.number\_generators.TesterClass method)@\spxentry{\_\_init\_\_()}\spxextra{eflatun\_uav.number\_generators.TesterClass method}|hyperpage}{3}
-\indexentry{tester\_\_() (eflatun\_uav.number\_generators.TesterClass method)@\spxentry{tester\_\_()}\spxextra{eflatun\_uav.number\_generators.TesterClass method}|hyperpage}{3}
-\indexentry{convert\_string\_to\_int() (in module eflatun\_uav.number\_generators)@\spxentry{convert\_string\_to\_int()}\spxextra{in module eflatun\_uav.number\_generators}|hyperpage}{3}
+\indexentry{module@\spxentry{module}!eflatun\_uav@\spxentry{eflatun\_uav}|hyperpage}{3}
+\indexentry{eflatun\_uav@\spxentry{eflatun\_uav}!module@\spxentry{module}|hyperpage}{3}
+\indexentry{module@\spxentry{module}!eflatun\_uav.filters@\spxentry{eflatun\_uav.filters}|hyperpage}{3}
+\indexentry{eflatun\_uav.filters@\spxentry{eflatun\_uav.filters}!module@\spxentry{module}|hyperpage}{3}
+\indexentry{BaseFilter (class in eflatun\_uav.filters)@\spxentry{BaseFilter}\spxextra{class in eflatun\_uav.filters}|hyperpage}{3}
+\indexentry{\_\_init\_\_() (eflatun\_uav.filters.BaseFilter method)@\spxentry{\_\_init\_\_()}\spxextra{eflatun\_uav.filters.BaseFilter method}|hyperpage}{3}
+\indexentry{module@\spxentry{module}!eflatun\_uav.helpers@\spxentry{eflatun\_uav.helpers}|hyperpage}{4}
+\indexentry{eflatun\_uav.helpers@\spxentry{eflatun\_uav.helpers}!module@\spxentry{module}|hyperpage}{4}
+\indexentry{module@\spxentry{module}!eflatun\_uav.helpers.number\_generators@\spxentry{eflatun\_uav.helpers.number\_generators}|hyperpage}{4}
+\indexentry{eflatun\_uav.helpers.number\_generators@\spxentry{eflatun\_uav.helpers.number\_generators}!module@\spxentry{module}|hyperpage}{4}
+\indexentry{convert\_string\_to\_float() (in module eflatun\_uav.helpers.number\_generators)@\spxentry{convert\_string\_to\_float()}\spxextra{in module eflatun\_uav.helpers.number\_generators}|hyperpage}{4}
+\indexentry{convert\_string\_to\_int() (in module eflatun\_uav.helpers.number\_generators)@\spxentry{convert\_string\_to\_int()}\spxextra{in module eflatun\_uav.helpers.number\_generators}|hyperpage}{4}
+\indexentry{module@\spxentry{module}!eflatun\_uav.objects@\spxentry{eflatun\_uav.objects}|hyperpage}{5}
+\indexentry{eflatun\_uav.objects@\spxentry{eflatun\_uav.objects}!module@\spxentry{module}|hyperpage}{5}
+\indexentry{module@\spxentry{module}!eflatun\_uav.optimizers@\spxentry{eflatun\_uav.optimizers}|hyperpage}{5}
+\indexentry{eflatun\_uav.optimizers@\spxentry{eflatun\_uav.optimizers}!module@\spxentry{module}|hyperpage}{5}
+\indexentry{module@\spxentry{module}!eflatun\_uav.trackers@\spxentry{eflatun\_uav.trackers}|hyperpage}{5}
+\indexentry{eflatun\_uav.trackers@\spxentry{eflatun\_uav.trackers}!module@\spxentry{module}|hyperpage}{5}

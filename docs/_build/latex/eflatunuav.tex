@@ -63,10 +63,10 @@
 
 
 
-\title{Eflatun UAV}
-\date{May 05, 2023}
-\release{2023}
-\author{Muhammed Sezer, Şevval Dikkaya}
+\title{eflatun uav}
+\date{May 14, 2023}
+\release{0.0.2}
+\author{Muhammed Sezer}
 \newcommand{\sphinxlogo}{\vbox{}}
 \renewcommand{\releasename}{Release}
 \makeindex
@@ -87,9 +87,6 @@
 
 \sphinxstepscope
 
-
-\chapter{All Modules}
-\label{\detokenize{all_modules:all-modules}}\label{\detokenize{all_modules::doc}}
 
 \begin{savenotes}\sphinxattablestart
 \sphinxthistablewithglobalstyle
@@ -112,8 +109,8 @@
 \sphinxstepscope
 
 
-\section{eflatun\_uav}
-\label{\detokenize{generated/eflatun_uav:module-eflatun_uav}}\label{\detokenize{generated/eflatun_uav:eflatun-uav}}\label{\detokenize{generated/eflatun_uav::doc}}\index{module@\spxentry{module}!eflatun\_uav@\spxentry{eflatun\_uav}}\index{eflatun\_uav@\spxentry{eflatun\_uav}!module@\spxentry{module}}\subsubsection*{Modules}
+\chapter{eflatun\_uav}
+\label{\detokenize{generated/eflatun_uav:module-eflatun_uav}}\label{\detokenize{generated/eflatun_uav:eflatun-uav}}\label{\detokenize{generated/eflatun_uav::doc}}\label{\detokenize{generated/eflatun_uav::doc}}\index{module@\spxentry{module}!eflatun\_uav@\spxentry{eflatun\_uav}}\index{eflatun\_uav@\spxentry{eflatun\_uav}!module@\spxentry{module}}\subsubsection*{Modules}
 
 
 \begin{savenotes}\sphinxattablestart
@@ -124,6 +121,13 @@
 \sphinxtoprule
 \sphinxtableatstartofbodyhook
 \sphinxAtStartPar
+{\hyperref[\detokenize{generated/eflatun_uav.filters:module-eflatun_uav.filters}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{eflatun\_uav.filters}}}}}
+&
+\sphinxAtStartPar
+Filter implementations for moving objects
+\\
+\sphinxhline
+\sphinxAtStartPar
 {\hyperref[\detokenize{generated/eflatun_uav.helpers:module-eflatun_uav.helpers}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{eflatun\_uav.helpers}}}}}
 &
 \sphinxAtStartPar
@@ -131,10 +135,24 @@
 \\
 \sphinxhline
 \sphinxAtStartPar
-{\hyperref[\detokenize{generated/eflatun_uav.number_generators:module-eflatun_uav.number_generators}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{eflatun\_uav.number\_generators}}}}}
+{\hyperref[\detokenize{generated/eflatun_uav.objects:module-eflatun_uav.objects}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{eflatun\_uav.objects}}}}}
 &
 \sphinxAtStartPar
-This module creates numbers for given variable type of inputs
+
+\\
+\sphinxhline
+\sphinxAtStartPar
+{\hyperref[\detokenize{generated/eflatun_uav.optimizers:module-eflatun_uav.optimizers}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{eflatun\_uav.optimizers}}}}}
+&
+\sphinxAtStartPar
+
+\\
+\sphinxhline
+\sphinxAtStartPar
+{\hyperref[\detokenize{generated/eflatun_uav.trackers:module-eflatun_uav.trackers}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{eflatun\_uav.trackers}}}}}
+&
+\sphinxAtStartPar
+
 \\
 \sphinxbottomrule
 \end{tabulary}
@@ -144,7 +162,75 @@ This module creates numbers for given variable type of inputs
 \sphinxstepscope
 
 
-\subsection{eflatun\_uav.helpers}
+\section{eflatun\_uav.filters}
+\label{\detokenize{generated/eflatun_uav.filters:module-eflatun_uav.filters}}\label{\detokenize{generated/eflatun_uav.filters:eflatun-uav-filters}}\label{\detokenize{generated/eflatun_uav.filters::doc}}\index{module@\spxentry{module}!eflatun\_uav.filters@\spxentry{eflatun\_uav.filters}}\index{eflatun\_uav.filters@\spxentry{eflatun\_uav.filters}!module@\spxentry{module}}
+\sphinxAtStartPar
+Filter implementations for moving objects
+\subsubsection*{Classes}
+
+
+\begin{savenotes}\sphinxattablestart
+\sphinxthistablewithglobalstyle
+\sphinxthistablewithnovlinesstyle
+\centering
+\begin{tabulary}{\linewidth}[t]{\X{1}{2}\X{1}{2}}
+\sphinxtoprule
+\sphinxtableatstartofbodyhook
+\sphinxAtStartPar
+{\hyperref[\detokenize{generated/eflatun_uav.filters:eflatun_uav.filters.BaseFilter}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{BaseFilter}}}}}(input\_size, output\_size)
+&
+\sphinxAtStartPar
+Base Filter object for Filter module
+\\
+\sphinxbottomrule
+\end{tabulary}
+\sphinxtableafterendhook\par
+\sphinxattableend\end{savenotes}
+\index{BaseFilter (class in eflatun\_uav.filters)@\spxentry{BaseFilter}\spxextra{class in eflatun\_uav.filters}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{generated/eflatun_uav.filters:eflatun_uav.filters.BaseFilter}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class\DUrole{w,w}{  }}}\sphinxcode{\sphinxupquote{eflatun\_uav.filters.}}\sphinxbfcode{\sphinxupquote{BaseFilter}}}{\sphinxparam{\DUrole{n,n}{input\_size}\DUrole{p,p}{:}\DUrole{w,w}{  }\DUrole{n,n}{List}}, \sphinxparam{\DUrole{n,n}{output\_size}\DUrole{p,p}{:}\DUrole{w,w}{  }\DUrole{n,n}{List}}}{}
+\pysigstopsignatures
+\sphinxAtStartPar
+Bases: \sphinxcode{\sphinxupquote{object}}
+
+\sphinxAtStartPar
+Base Filter object for Filter module
+\index{\_\_init\_\_() (eflatun\_uav.filters.BaseFilter method)@\spxentry{\_\_init\_\_()}\spxextra{eflatun\_uav.filters.BaseFilter method}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{generated/eflatun_uav.filters:eflatun_uav.filters.BaseFilter.__init__}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{\_\_init\_\_}}}{\sphinxparam{\DUrole{n,n}{input\_size}\DUrole{p,p}{:}\DUrole{w,w}{  }\DUrole{n,n}{List}}, \sphinxparam{\DUrole{n,n}{output\_size}\DUrole{p,p}{:}\DUrole{w,w}{  }\DUrole{n,n}{List}}}{{ $\rightarrow$ None}}
+\pysigstopsignatures
+\sphinxAtStartPar
+\_summary\_
+\begin{quote}\begin{description}
+\sphinxlineitem{Parameters}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{input\_size}} (\sphinxstyleliteralemphasis{\sphinxupquote{List}}) \textendash{} \_description\_
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{output\_size}} (\sphinxstyleliteralemphasis{\sphinxupquote{List}}) \textendash{} \_description\_
+
+\end{itemize}
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+
+\end{fulllineitems}
+
+
+\sphinxstepscope
+
+
+\section{eflatun\_uav.helpers}
 \label{\detokenize{generated/eflatun_uav.helpers:module-eflatun_uav.helpers}}\label{\detokenize{generated/eflatun_uav.helpers:eflatun-uav-helpers}}\label{\detokenize{generated/eflatun_uav.helpers::doc}}\index{module@\spxentry{module}!eflatun\_uav.helpers@\spxentry{eflatun\_uav.helpers}}\index{eflatun\_uav.helpers@\spxentry{eflatun\_uav.helpers}!module@\spxentry{module}}\subsubsection*{Modules}
 
 
@@ -169,7 +255,7 @@ This module creates numbers for given variable type of inputs
 \sphinxstepscope
 
 
-\subsubsection{eflatun\_uav.helpers.number\_generators}
+\subsection{eflatun\_uav.helpers.number\_generators}
 \label{\detokenize{generated/eflatun_uav.helpers.number_generators:module-eflatun_uav.helpers.number_generators}}\label{\detokenize{generated/eflatun_uav.helpers.number_generators:eflatun-uav-helpers-number-generators}}\label{\detokenize{generated/eflatun_uav.helpers.number_generators::doc}}\index{module@\spxentry{module}!eflatun\_uav.helpers.number\_generators@\spxentry{eflatun\_uav.helpers.number\_generators}}\index{eflatun\_uav.helpers.number\_generators@\spxentry{eflatun\_uav.helpers.number\_generators}!module@\spxentry{module}}
 \sphinxAtStartPar
 This module creates numbers for given variable type of inputs
@@ -184,6 +270,13 @@ This module creates numbers for given variable type of inputs
 \sphinxtoprule
 \sphinxtableatstartofbodyhook
 \sphinxAtStartPar
+{\hyperref[\detokenize{generated/eflatun_uav.helpers.number_generators:eflatun_uav.helpers.number_generators.convert_string_to_float}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{convert\_string\_to\_float}}}}}(string)
+&
+\sphinxAtStartPar
+Converts a string to a deterministic random float representation between 0 and 1.
+\\
+\sphinxhline
+\sphinxAtStartPar
 {\hyperref[\detokenize{generated/eflatun_uav.helpers.number_generators:eflatun_uav.helpers.number_generators.convert_string_to_int}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{convert\_string\_to\_int}}}}}(string, *{[}, base{]})
 &
 \sphinxAtStartPar
@@ -193,83 +286,42 @@ Converts a string to an deterministicly random integer representation using the 
 \end{tabulary}
 \sphinxtableafterendhook\par
 \sphinxattableend\end{savenotes}
-\subsubsection*{Classes}
-
-
-\begin{savenotes}\sphinxattablestart
-\sphinxthistablewithglobalstyle
-\sphinxthistablewithnovlinesstyle
-\centering
-\begin{tabulary}{\linewidth}[t]{\X{1}{2}\X{1}{2}}
-\sphinxtoprule
-\sphinxtableatstartofbodyhook
-\sphinxAtStartPar
-{\hyperref[\detokenize{generated/eflatun_uav.helpers.number_generators:eflatun_uav.helpers.number_generators.TesterClass}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{TesterClass}}}}}()
-&
-\sphinxAtStartPar
-This is a summary for the TesterClass.
-\\
-\sphinxbottomrule
-\end{tabulary}
-\sphinxtableafterendhook\par
-\sphinxattableend\end{savenotes}
-\index{TesterClass (class in eflatun\_uav.helpers.number\_generators)@\spxentry{TesterClass}\spxextra{class in eflatun\_uav.helpers.number\_generators}}
+\index{convert\_string\_to\_float() (in module eflatun\_uav.helpers.number\_generators)@\spxentry{convert\_string\_to\_float()}\spxextra{in module eflatun\_uav.helpers.number\_generators}}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{generated/eflatun_uav.helpers.number_generators:eflatun_uav.helpers.number_generators.TesterClass}}
+\phantomsection\label{\detokenize{generated/eflatun_uav.helpers.number_generators:eflatun_uav.helpers.number_generators.convert_string_to_float}}
 \pysigstartsignatures
-\pysigline{\sphinxbfcode{\sphinxupquote{class\DUrole{w,w}{  }}}\sphinxcode{\sphinxupquote{eflatun\_uav.helpers.number\_generators.}}\sphinxbfcode{\sphinxupquote{TesterClass}}}
+\pysiglinewithargsret{\sphinxcode{\sphinxupquote{eflatun\_uav.helpers.number\_generators.}}\sphinxbfcode{\sphinxupquote{convert\_string\_to\_float}}}{\sphinxparam{\DUrole{n,n}{string}\DUrole{p,p}{:}\DUrole{w,w}{  }\DUrole{n,n}{str}}}{{ $\rightarrow$ float}}
 \pysigstopsignatures
 \sphinxAtStartPar
-Bases: \sphinxcode{\sphinxupquote{object}}
+Converts a string to a deterministic random float representation between 0 and 1.
 
 \sphinxAtStartPar
-This is a summary for the TesterClass.
-\index{\_\_init\_\_() (eflatun\_uav.helpers.number\_generators.TesterClass method)@\spxentry{\_\_init\_\_()}\spxextra{eflatun\_uav.helpers.number\_generators.TesterClass method}}
-
-\begin{fulllineitems}
-\phantomsection\label{\detokenize{generated/eflatun_uav.helpers.number_generators:eflatun_uav.helpers.number_generators.TesterClass.__init__}}
-\pysigstartsignatures
-\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{\_\_init\_\_}}}{}{{ $\rightarrow$ None}}
-\pysigstopsignatures
-\sphinxAtStartPar
-Initialize the TesterClass instance.
-
-\end{fulllineitems}
-
-\index{tester\_\_() (eflatun\_uav.helpers.number\_generators.TesterClass method)@\spxentry{tester\_\_()}\spxextra{eflatun\_uav.helpers.number\_generators.TesterClass method}}
-
-\begin{fulllineitems}
-\phantomsection\label{\detokenize{generated/eflatun_uav.helpers.number_generators:eflatun_uav.helpers.number_generators.TesterClass.tester__}}
-\pysigstartsignatures
-\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{tester\_\_}}}{\sphinxparam{\DUrole{n,n}{adam}\DUrole{p,p}{:}\DUrole{w,w}{  }\DUrole{n,n}{int}}, \sphinxparam{\DUrole{n,n}{kadin}\DUrole{p,p}{:}\DUrole{w,w}{  }\DUrole{n,n}{float}}}{{ $\rightarrow$ str}}
-\pysigstopsignatures
-\sphinxAtStartPar
-This is a summary for the {\color{red}\bfseries{}tester\_\_} method.
+Works better for texts longer than 5 letters.
 \begin{quote}\begin{description}
-\sphinxlineitem{Parameters}\begin{itemize}
-\item {} 
+\sphinxlineitem{Parameters}
 \sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{adam}} (\sphinxstyleliteralemphasis{\sphinxupquote{int}}) \textendash{} A description for the ‘adam’ parameter.
-
-\item {} 
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{kadin}} (\sphinxstyleliteralemphasis{\sphinxupquote{float}}) \textendash{} A description for the ‘kadin’ parameter.
-
-\end{itemize}
+\sphinxstyleliteralstrong{\sphinxupquote{string}} (\sphinxstyleliteralemphasis{\sphinxupquote{str}}) \textendash{} The input string to be converted to a float.
 
 \sphinxlineitem{Returns}
 \sphinxAtStartPar
-A description for the return value.
+The float representation of the input string between 0 and 1.
 
 \sphinxlineitem{Return type}
 \sphinxAtStartPar
-str
+float
 
 \end{description}\end{quote}
+\subsubsection*{Example}
 
-\end{fulllineitems}
-
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{convert\PYGZus{}string\PYGZus{}to\PYGZus{}float}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Hello, World}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{g+go}{0.3350260018341942}
+\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{convert\PYGZus{}string\PYGZus{}to\PYGZus{}float}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Hi, World?}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{g+go}{0.8893743173684925}
+\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{convert\PYGZus{}string\PYGZus{}to\PYGZus{}float}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Hi, World}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{g+go}{0.03764671504177386}
+\end{sphinxVerbatim}
 
 \end{fulllineitems}
 
@@ -282,11 +334,6 @@ str
 \pysigstopsignatures
 \sphinxAtStartPar
 Converts a string to an deterministicly random integer representation using the specified base.
-
-\sphinxAtStartPar
-This function calculates two totals, one for the forward direction of the string
-and another for the reverse direction. The final result is the sum of both totals
-modulo the given base.
 
 \sphinxAtStartPar
 Works better for texts longer than 5 letters.
@@ -332,169 +379,25 @@ int
 \sphinxstepscope
 
 
-\subsection{eflatun\_uav.number\_generators}
-\label{\detokenize{generated/eflatun_uav.number_generators:module-eflatun_uav.number_generators}}\label{\detokenize{generated/eflatun_uav.number_generators:eflatun-uav-number-generators}}\label{\detokenize{generated/eflatun_uav.number_generators::doc}}\index{module@\spxentry{module}!eflatun\_uav.number\_generators@\spxentry{eflatun\_uav.number\_generators}}\index{eflatun\_uav.number\_generators@\spxentry{eflatun\_uav.number\_generators}!module@\spxentry{module}}
-\sphinxAtStartPar
-This module creates numbers for given variable type of inputs
-\subsubsection*{Functions}
+\section{eflatun\_uav.objects}
+\label{\detokenize{generated/eflatun_uav.objects:module-eflatun_uav.objects}}\label{\detokenize{generated/eflatun_uav.objects:eflatun-uav-objects}}\label{\detokenize{generated/eflatun_uav.objects::doc}}\index{module@\spxentry{module}!eflatun\_uav.objects@\spxentry{eflatun\_uav.objects}}\index{eflatun\_uav.objects@\spxentry{eflatun\_uav.objects}!module@\spxentry{module}}
+\sphinxstepscope
 
 
-\begin{savenotes}\sphinxattablestart
-\sphinxthistablewithglobalstyle
-\sphinxthistablewithnovlinesstyle
-\centering
-\begin{tabulary}{\linewidth}[t]{\X{1}{2}\X{1}{2}}
-\sphinxtoprule
-\sphinxtableatstartofbodyhook
-\sphinxAtStartPar
-{\hyperref[\detokenize{generated/eflatun_uav.number_generators:eflatun_uav.number_generators.convert_string_to_int}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{convert\_string\_to\_int}}}}}(string, *{[}, base{]})
-&
-\sphinxAtStartPar
-Converts a string to an deterministicly random integer representation using the specified base.
-\\
-\sphinxbottomrule
-\end{tabulary}
-\sphinxtableafterendhook\par
-\sphinxattableend\end{savenotes}
-\subsubsection*{Classes}
+\section{eflatun\_uav.optimizers}
+\label{\detokenize{generated/eflatun_uav.optimizers:module-eflatun_uav.optimizers}}\label{\detokenize{generated/eflatun_uav.optimizers:eflatun-uav-optimizers}}\label{\detokenize{generated/eflatun_uav.optimizers::doc}}\index{module@\spxentry{module}!eflatun\_uav.optimizers@\spxentry{eflatun\_uav.optimizers}}\index{eflatun\_uav.optimizers@\spxentry{eflatun\_uav.optimizers}!module@\spxentry{module}}
+\sphinxstepscope
 
 
-\begin{savenotes}\sphinxattablestart
-\sphinxthistablewithglobalstyle
-\sphinxthistablewithnovlinesstyle
-\centering
-\begin{tabulary}{\linewidth}[t]{\X{1}{2}\X{1}{2}}
-\sphinxtoprule
-\sphinxtableatstartofbodyhook
-\sphinxAtStartPar
-{\hyperref[\detokenize{generated/eflatun_uav.number_generators:eflatun_uav.number_generators.TesterClass}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{TesterClass}}}}}()
-&
-\sphinxAtStartPar
-\_summary\_
-\\
-\sphinxbottomrule
-\end{tabulary}
-\sphinxtableafterendhook\par
-\sphinxattableend\end{savenotes}
-\index{TesterClass (class in eflatun\_uav.number\_generators)@\spxentry{TesterClass}\spxextra{class in eflatun\_uav.number\_generators}}
-
-\begin{fulllineitems}
-\phantomsection\label{\detokenize{generated/eflatun_uav.number_generators:eflatun_uav.number_generators.TesterClass}}
-\pysigstartsignatures
-\pysigline{\sphinxbfcode{\sphinxupquote{class\DUrole{w,w}{  }}}\sphinxcode{\sphinxupquote{eflatun\_uav.number\_generators.}}\sphinxbfcode{\sphinxupquote{TesterClass}}}
-\pysigstopsignatures
-\sphinxAtStartPar
-Bases: \sphinxcode{\sphinxupquote{object}}
-
-\sphinxAtStartPar
-\_summary\_
-\index{\_\_init\_\_() (eflatun\_uav.number\_generators.TesterClass method)@\spxentry{\_\_init\_\_()}\spxextra{eflatun\_uav.number\_generators.TesterClass method}}
-
-\begin{fulllineitems}
-\phantomsection\label{\detokenize{generated/eflatun_uav.number_generators:eflatun_uav.number_generators.TesterClass.__init__}}
-\pysigstartsignatures
-\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{\_\_init\_\_}}}{}{{ $\rightarrow$ None}}
-\pysigstopsignatures
-\sphinxAtStartPar
-\_summary\_
-
-\end{fulllineitems}
-
-\index{tester\_\_() (eflatun\_uav.number\_generators.TesterClass method)@\spxentry{tester\_\_()}\spxextra{eflatun\_uav.number\_generators.TesterClass method}}
-
-\begin{fulllineitems}
-\phantomsection\label{\detokenize{generated/eflatun_uav.number_generators:eflatun_uav.number_generators.TesterClass.tester__}}
-\pysigstartsignatures
-\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{tester\_\_}}}{\sphinxparam{\DUrole{n,n}{adam}\DUrole{p,p}{:}\DUrole{w,w}{  }\DUrole{n,n}{int}}, \sphinxparam{\DUrole{n,n}{kadin}\DUrole{p,p}{:}\DUrole{w,w}{  }\DUrole{n,n}{float}}}{{ $\rightarrow$ str}}
-\pysigstopsignatures
-\sphinxAtStartPar
-\_summary\_
-\begin{quote}\begin{description}
-\sphinxlineitem{Parameters}\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{adam}} (\sphinxstyleliteralemphasis{\sphinxupquote{int}}) \textendash{} \_description\_
-
-\item {} 
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{kadin}} (\sphinxstyleliteralemphasis{\sphinxupquote{float}}) \textendash{} \_description\_
-
-\end{itemize}
-
-\sphinxlineitem{Returns}
-\sphinxAtStartPar
-\_description\_
-
-\sphinxlineitem{Return type}
-\sphinxAtStartPar
-string
-
-\end{description}\end{quote}
-
-\end{fulllineitems}
-
-
-\end{fulllineitems}
-
-\index{convert\_string\_to\_int() (in module eflatun\_uav.number\_generators)@\spxentry{convert\_string\_to\_int()}\spxextra{in module eflatun\_uav.number\_generators}}
-
-\begin{fulllineitems}
-\phantomsection\label{\detokenize{generated/eflatun_uav.number_generators:eflatun_uav.number_generators.convert_string_to_int}}
-\pysigstartsignatures
-\pysiglinewithargsret{\sphinxcode{\sphinxupquote{eflatun\_uav.number\_generators.}}\sphinxbfcode{\sphinxupquote{convert\_string\_to\_int}}}{\sphinxparam{\DUrole{n,n}{string}\DUrole{p,p}{:}\DUrole{w,w}{  }\DUrole{n,n}{str}}, \sphinxparam{\DUrole{o,o}{*}}, \sphinxparam{\DUrole{n,n}{base}\DUrole{p,p}{:}\DUrole{w,w}{  }\DUrole{n,n}{int\DUrole{w,w}{  }\DUrole{p,p}{|}\DUrole{w,w}{  }None}\DUrole{w,w}{  }\DUrole{o,o}{=}\DUrole{w,w}{  }\DUrole{default_value}{256}}}{{ $\rightarrow$ int}}
-\pysigstopsignatures
-\sphinxAtStartPar
-Converts a string to an deterministicly random integer representation using the specified base.
-
-\sphinxAtStartPar
-This function calculates two totals, one for the forward direction of the string
-and another for the reverse direction. The final result is the sum of both totals
-modulo the given base.
-
-\sphinxAtStartPar
-Works better for texts longer than 5 letters.
-\begin{quote}\begin{description}
-\sphinxlineitem{Parameters}\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{string}} (\sphinxstyleliteralemphasis{\sphinxupquote{str}}) \textendash{} The input string to be converted to an integer.
-
-\item {} 
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{base}} (\sphinxstyleliteralemphasis{\sphinxupquote{Optional}}\sphinxstyleliteralemphasis{\sphinxupquote{{[}}}\sphinxstyleliteralemphasis{\sphinxupquote{int}}\sphinxstyleliteralemphasis{\sphinxupquote{{]}}}\sphinxstyleliteralemphasis{\sphinxupquote{, }}\sphinxstyleliteralemphasis{\sphinxupquote{optional}}) \textendash{} The base to be used for the conversion. Defaults to 256.
-
-\end{itemize}
-
-\sphinxlineitem{Raises}
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{ValueError}} \textendash{} If the base is not an integer or if it is 0, \sphinxhyphen{}1, or 1.
-
-\sphinxlineitem{Returns}
-\sphinxAtStartPar
-The integer representation of the input string.
-
-\sphinxlineitem{Return type}
-\sphinxAtStartPar
-int
-
-\end{description}\end{quote}
-\subsubsection*{Example}
-
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{convert\PYGZus{}string\PYGZus{}to\PYGZus{}int}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Hello, World!}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
-\PYG{g+go}{157}
-\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{convert\PYGZus{}string\PYGZus{}to\PYGZus{}int}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Hello, World}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
-\PYG{g+go}{84}
-\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{convert\PYGZus{}string\PYGZus{}to\PYGZus{}int}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Hello, World!}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{base} \PYG{o}{=} \PYG{l+m+mi}{36}\PYG{p}{)}
-\PYG{g+go}{13}
-\end{sphinxVerbatim}
-
-\end{fulllineitems}
-
-
+\section{eflatun\_uav.trackers}
+\label{\detokenize{generated/eflatun_uav.trackers:module-eflatun_uav.trackers}}\label{\detokenize{generated/eflatun_uav.trackers:eflatun-uav-trackers}}\label{\detokenize{generated/eflatun_uav.trackers::doc}}\index{module@\spxentry{module}!eflatun\_uav.trackers@\spxentry{eflatun\_uav.trackers}}\index{eflatun\_uav.trackers@\spxentry{eflatun\_uav.trackers}!module@\spxentry{module}}
 
 \chapter{Indices and tables}
 \label{\detokenize{index:indices-and-tables}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\DUrole{xref,std,std-ref}{genindex}
+
 \item {} 
 \sphinxAtStartPar
 \DUrole{xref,std,std-ref}{modindex}
@@ -511,9 +414,12 @@ int
 \let\bigletter\sphinxstyleindexlettergroup
 \bigletter{e}
 \item\relax\sphinxstyleindexentry{eflatun\_uav}\sphinxstyleindexpageref{generated/eflatun_uav:\detokenize{module-eflatun_uav}}
+\item\relax\sphinxstyleindexentry{eflatun\_uav.filters}\sphinxstyleindexpageref{generated/eflatun_uav.filters:\detokenize{module-eflatun_uav.filters}}
 \item\relax\sphinxstyleindexentry{eflatun\_uav.helpers}\sphinxstyleindexpageref{generated/eflatun_uav.helpers:\detokenize{module-eflatun_uav.helpers}}
 \item\relax\sphinxstyleindexentry{eflatun\_uav.helpers.number\_generators}\sphinxstyleindexpageref{generated/eflatun_uav.helpers.number_generators:\detokenize{module-eflatun_uav.helpers.number_generators}}
-\item\relax\sphinxstyleindexentry{eflatun\_uav.number\_generators}\sphinxstyleindexpageref{generated/eflatun_uav.number_generators:\detokenize{module-eflatun_uav.number_generators}}
+\item\relax\sphinxstyleindexentry{eflatun\_uav.objects}\sphinxstyleindexpageref{generated/eflatun_uav.objects:\detokenize{module-eflatun_uav.objects}}
+\item\relax\sphinxstyleindexentry{eflatun\_uav.optimizers}\sphinxstyleindexpageref{generated/eflatun_uav.optimizers:\detokenize{module-eflatun_uav.optimizers}}
+\item\relax\sphinxstyleindexentry{eflatun\_uav.trackers}\sphinxstyleindexpageref{generated/eflatun_uav.trackers:\detokenize{module-eflatun_uav.trackers}}
 \end{sphinxtheindex}
 
 \renewcommand{\indexname}{Index}

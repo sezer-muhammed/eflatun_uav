@@ -1,9 +1,9 @@
-.. eflatun_uav documentation master file, created by
-   sphinx-quickstart on Fri May  5 17:06:50 2023.
+.. eflatun uav documentation master file, created by
+   sphinx-quickstart on Sun May 14 11:49:58 2023.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to eflatun_uav's documentation!
+Welcome to eflatun uav's documentation!
 =======================================
 
 .. toctree::
@@ -13,9 +13,9 @@ Welcome to eflatun_uav's documentation!
    all_modules
 
 
-
 Indices and tables
 ==================
 
+* :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`

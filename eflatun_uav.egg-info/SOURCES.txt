@@ -1,14 +1,12 @@
 README.md
 setup.py
 eflatun_uav/__init__.py
-eflatun_uav/objects.py
-eflatun_uav/optimizers.py
-eflatun_uav/trackers.py
 eflatun_uav.egg-info/PKG-INFO
 eflatun_uav.egg-info/SOURCES.txt
 eflatun_uav.egg-info/dependency_links.txt
 eflatun_uav.egg-info/requires.txt
 eflatun_uav.egg-info/top_level.txt
+eflatun_uav/filters/__init__.py
 eflatun_uav/helpers/__init__.py
 eflatun_uav/helpers/number_generators.py
 tests/__init__.py
