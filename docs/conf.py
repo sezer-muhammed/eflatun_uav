@@ -11,6 +11,7 @@ import sys
 import sphinx_rtd_theme
 
 sys.path.insert(0, os.path.abspath("../eflatun_uav"))
+sys.path.insert(0, os.path.abspath("../"))
 
 project = 'eflatun uav'
 copyright = '2023, Muhammed Sezer'
