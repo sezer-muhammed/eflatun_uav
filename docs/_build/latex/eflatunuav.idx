@@ -5,7 +5,7 @@
 \indexentry{BaseFilter (class in eflatun\_uav.filters)@\spxentry{BaseFilter}\spxextra{class in eflatun\_uav.filters}|hyperpage}{3}
 \indexentry{\_\_init\_\_() (eflatun\_uav.filters.BaseFilter method)@\spxentry{\_\_init\_\_()}\spxextra{eflatun\_uav.filters.BaseFilter method}|hyperpage}{3}
 \indexentry{predict() (eflatun\_uav.filters.BaseFilter method)@\spxentry{predict()}\spxextra{eflatun\_uav.filters.BaseFilter method}|hyperpage}{3}
-\indexentry{update() (eflatun\_uav.filters.BaseFilter method)@\spxentry{update()}\spxextra{eflatun\_uav.filters.BaseFilter method}|hyperpage}{3}
+\indexentry{update() (eflatun\_uav.filters.BaseFilter method)@\spxentry{update()}\spxextra{eflatun\_uav.filters.BaseFilter method}|hyperpage}{4}
 \indexentry{module@\spxentry{module}!eflatun\_uav.helpers@\spxentry{eflatun\_uav.helpers}|hyperpage}{4}
 \indexentry{eflatun\_uav.helpers@\spxentry{eflatun\_uav.helpers}!module@\spxentry{module}|hyperpage}{4}
 \indexentry{module@\spxentry{module}!eflatun\_uav.helpers.number\_generators@\spxentry{eflatun\_uav.helpers.number\_generators}|hyperpage}{4}

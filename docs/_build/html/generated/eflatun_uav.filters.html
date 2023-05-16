@@ -91,7 +91,7 @@
 <table class="autosummary longtable docutils align-default">
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="#eflatun_uav.filters.BaseFilter" title="eflatun_uav.filters.BaseFilter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BaseFilter</span></code></a>(input_size, output_size)</p></td>
-<td><p>Base Filter object for Filter module</p></td>
+<td><p>A base class representing a generic filter for moving objects.</p></td>
 </tr>
 </tbody>
 </table>
@@ -99,16 +99,20 @@
 <dt class="sig sig-object py" id="eflatun_uav.filters.BaseFilter">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">eflatun_uav.filters.</span></span><span class="sig-name descname"><span class="pre">BaseFilter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/eflatun_uav/filters.html#BaseFilter"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#eflatun_uav.filters.BaseFilter" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<p>Base Filter object for Filter module</p>
+<p>A base class representing a generic filter for moving objects.</p>
+<p>This class serves as a foundation for more specific filter implementations. It is designed to be
+subclassed, and does not provide a full implementation that can be used on its own.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="eflatun_uav.filters.BaseFilter.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="../_modules/eflatun_uav/filters.html#BaseFilter.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#eflatun_uav.filters.BaseFilter.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><p>_summary_</p>
+<dd><p>Initializes the base filter with the given input and output size.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>input_size</strong> (<em>List</em>) – _description_</p></li>
-<li><p><strong>output_size</strong> (<em>List</em>) – _description_</p></li>
+<li><p><strong>input_size</strong> (<em>List</em>) – The size of the input state. This is usually a list where each element represents
+the size of a different aspect of the input state.</p></li>
+<li><p><strong>output_size</strong> (<em>List</em>) – The size of the output state. Similar to the input size, this is a list where each
+element represents the size of a different aspect of the output state.</p></li>
 </ul>
 </dd>
 </dl>
@@ -117,13 +121,18 @@
 <dl class="py method">
 <dt class="sig sig-object py" id="eflatun_uav.filters.BaseFilter.predict">
 <span class="sig-name descname"><span class="pre">predict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span></span></span><a class="reference internal" href="../_modules/eflatun_uav/filters.html#BaseFilter.predict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#eflatun_uav.filters.BaseFilter.predict" title="Permalink to this definition">¶</a></dt>
-<dd><p>_summary_</p>
+<dd><p>Predicts the next state based on the current state of the filter.</p>
+<p>This method is intended to be overridden by subclasses.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Raises<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>NotImplementedError</strong> – _description_</p>
+<dd class="field-odd"><p><strong>NotImplementedError</strong> – This method must be implemented in a subclass.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>_description_</p>
+<dd class="field-even"><p><dl class="simple">
+<dt>The predicted next state. The size and structure of this output should match the output_size</dt><dd><p>specified when the filter was initialized.</p>
+</dd>
+</dl>
+</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>np.ndarray</p>
@@ -134,13 +143,15 @@
 <dl class="py method">
 <dt class="sig sig-object py" id="eflatun_uav.filters.BaseFilter.update">
 <span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/eflatun_uav/filters.html#BaseFilter.update"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#eflatun_uav.filters.BaseFilter.update" title="Permalink to this definition">¶</a></dt>
-<dd><p>_summary_</p>
+<dd><p>Updates the state of the filter based on the given input state.</p>
+<p>This method is intended to be overridden by subclasses.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>input_state</strong> (<em>np.ndarray</em>) – _description_</p>
+<dd class="field-odd"><p><strong>input_state</strong> (<em>np.ndarray</em>) – The input state used to update the filter. The size and structure of this
+input should match the input_size specified when the filter was initialized.</p>
 </dd>
 <dt class="field-even">Raises<span class="colon">:</span></dt>
-<dd class="field-even"><p><strong>NotImplementedError</strong> – _description_</p>
+<dd class="field-even"><p><strong>NotImplementedError</strong> – This method must be implemented in a subclass.</p>
 </dd>
 </dl>
 </dd></dl>

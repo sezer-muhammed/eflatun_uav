@@ -159,7 +159,7 @@ Filter implementations for moving objects
 {\hyperref[\detokenize{generated/eflatun_uav.filters:eflatun_uav.filters.BaseFilter}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{BaseFilter}}}}}(input\_size, output\_size)
 &
 \sphinxAtStartPar
-Base Filter object for Filter module
+A base class representing a generic filter for moving objects.
 \\
 \sphinxbottomrule
 \end{tabulary}
@@ -176,7 +176,11 @@ Base Filter object for Filter module
 Bases: \sphinxcode{\sphinxupquote{object}}
 
 \sphinxAtStartPar
-Base Filter object for Filter module
+A base class representing a generic filter for moving objects.
+
+\sphinxAtStartPar
+This class serves as a foundation for more specific filter implementations. It is designed to be
+subclassed, and does not provide a full implementation that can be used on its own.
 \index{\_\_init\_\_() (eflatun\_uav.filters.BaseFilter method)@\spxentry{\_\_init\_\_()}\spxextra{eflatun\_uav.filters.BaseFilter method}}
 
 \begin{fulllineitems}
@@ -185,16 +189,18 @@ Base Filter object for Filter module
 \pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{\_\_init\_\_}}}{\sphinxparam{\DUrole{n,n}{input\_size}\DUrole{p,p}{:}\DUrole{w,w}{  }\DUrole{n,n}{List}}, \sphinxparam{\DUrole{n,n}{output\_size}\DUrole{p,p}{:}\DUrole{w,w}{  }\DUrole{n,n}{List}}}{{ $\rightarrow$ None}}
 \pysigstopsignatures
 \sphinxAtStartPar
-\_summary\_
+Initializes the base filter with the given input and output size.
 \begin{quote}\begin{description}
 \sphinxlineitem{Parameters}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{input\_size}} (\sphinxstyleliteralemphasis{\sphinxupquote{List}}) \textendash{} \_description\_
+\sphinxstyleliteralstrong{\sphinxupquote{input\_size}} (\sphinxstyleliteralemphasis{\sphinxupquote{List}}) \textendash{} The size of the input state. This is usually a list where each element represents
+the size of a different aspect of the input state.
 
 \item {} 
 \sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{output\_size}} (\sphinxstyleliteralemphasis{\sphinxupquote{List}}) \textendash{} \_description\_
+\sphinxstyleliteralstrong{\sphinxupquote{output\_size}} (\sphinxstyleliteralemphasis{\sphinxupquote{List}}) \textendash{} The size of the output state. Similar to the input size, this is a list where each
+element represents the size of a different aspect of the output state.
 
 \end{itemize}
 
@@ -210,15 +216,24 @@ Base Filter object for Filter module
 \pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{predict}}}{}{{ $\rightarrow$ ndarray}}
 \pysigstopsignatures
 \sphinxAtStartPar
-\_summary\_
+Predicts the next state based on the current state of the filter.
+
+\sphinxAtStartPar
+This method is intended to be overridden by subclasses.
 \begin{quote}\begin{description}
 \sphinxlineitem{Raises}
 \sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{NotImplementedError}} \textendash{} \_description\_
+\sphinxstyleliteralstrong{\sphinxupquote{NotImplementedError}} \textendash{} This method must be implemented in a subclass.
 
 \sphinxlineitem{Returns}
 \sphinxAtStartPar
-\_description\_
+\begin{description}
+\sphinxlineitem{The predicted next state. The size and structure of this output should match the output\_size}
+\sphinxAtStartPar
+specified when the filter was initialized.
+
+\end{description}
+
 
 \sphinxlineitem{Return type}
 \sphinxAtStartPar
@@ -236,15 +251,19 @@ np.ndarray
 \pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{update}}}{\sphinxparam{\DUrole{n,n}{input\_state}\DUrole{p,p}{:}\DUrole{w,w}{  }\DUrole{n,n}{ndarray}}}{}
 \pysigstopsignatures
 \sphinxAtStartPar
-\_summary\_
+Updates the state of the filter based on the given input state.
+
+\sphinxAtStartPar
+This method is intended to be overridden by subclasses.
 \begin{quote}\begin{description}
 \sphinxlineitem{Parameters}
 \sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{input\_state}} (\sphinxstyleliteralemphasis{\sphinxupquote{np.ndarray}}) \textendash{} \_description\_
+\sphinxstyleliteralstrong{\sphinxupquote{input\_state}} (\sphinxstyleliteralemphasis{\sphinxupquote{np.ndarray}}) \textendash{} The input state used to update the filter. The size and structure of this
+input should match the input\_size specified when the filter was initialized.
 
 \sphinxlineitem{Raises}
 \sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{NotImplementedError}} \textendash{} \_description\_
+\sphinxstyleliteralstrong{\sphinxupquote{NotImplementedError}} \textendash{} This method must be implemented in a subclass.
 
 \end{description}\end{quote}
 
