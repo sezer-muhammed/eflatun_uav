@@ -72,6 +72,7 @@
 <span class="sd">&quot;&quot;&quot;</span>
 
 <span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
 <div class="viewcode-block" id="BaseFilter"><a class="viewcode-back" href="../../generated/eflatun_uav.filters.html#eflatun_uav.filters.BaseFilter">[docs]</a><span class="k">class</span> <span class="nc">BaseFilter</span><span class="p">():</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Base Filter object for Filter module</span>
@@ -85,8 +86,29 @@
 <span class="sd">            output_size (List): _description_</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">input_size</span> <span class="o">=</span> <span class="n">input_size</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">output_size</span> <span class="o">=</span> <span class="n">output_size</span></div></div>
-        
+        <span class="bp">self</span><span class="o">.</span><span class="n">output_size</span> <span class="o">=</span> <span class="n">output_size</span></div>
+
+<div class="viewcode-block" id="BaseFilter.update"><a class="viewcode-back" href="../../generated/eflatun_uav.filters.html#eflatun_uav.filters.BaseFilter.update">[docs]</a>    <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">input_state</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;_summary_</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            input_state (np.ndarray): _description_</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            NotImplementedError: _description_</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;This is base class, please refer the main classes&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="BaseFilter.predict"><a class="viewcode-back" href="../../generated/eflatun_uav.filters.html#eflatun_uav.filters.BaseFilter.predict">[docs]</a>    <span class="k">def</span> <span class="nf">predict</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;_summary_</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            NotImplementedError: _description_</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            np.ndarray: _description_</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;This is base class, please refer the main classes&quot;</span><span class="p">)</span></div></div>
 </pre></div>
 
            </div>

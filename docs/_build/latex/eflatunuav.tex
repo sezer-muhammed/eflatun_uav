@@ -64,7 +64,7 @@
 
 
 \title{eflatun uav}
-\date{May 14, 2023}
+\date{May 16, 2023}
 \release{0.0.2}
 \author{Muhammed Sezer}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -133,27 +133,6 @@ Filter implementations for moving objects
 \sphinxAtStartPar
 
 \\
-\sphinxhline
-\sphinxAtStartPar
-{\hyperref[\detokenize{generated/eflatun_uav.objects:module-eflatun_uav.objects}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{eflatun\_uav.objects}}}}}
-&
-\sphinxAtStartPar
-
-\\
-\sphinxhline
-\sphinxAtStartPar
-{\hyperref[\detokenize{generated/eflatun_uav.optimizers:module-eflatun_uav.optimizers}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{eflatun\_uav.optimizers}}}}}
-&
-\sphinxAtStartPar
-
-\\
-\sphinxhline
-\sphinxAtStartPar
-{\hyperref[\detokenize{generated/eflatun_uav.trackers:module-eflatun_uav.trackers}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{eflatun\_uav.trackers}}}}}
-&
-\sphinxAtStartPar
-
-\\
 \sphinxbottomrule
 \end{tabulary}
 \sphinxtableafterendhook\par
@@ -218,6 +197,54 @@ Base Filter object for Filter module
 \sphinxstyleliteralstrong{\sphinxupquote{output\_size}} (\sphinxstyleliteralemphasis{\sphinxupquote{List}}) \textendash{} \_description\_
 
 \end{itemize}
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\index{predict() (eflatun\_uav.filters.BaseFilter method)@\spxentry{predict()}\spxextra{eflatun\_uav.filters.BaseFilter method}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{generated/eflatun_uav.filters:eflatun_uav.filters.BaseFilter.predict}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{predict}}}{}{{ $\rightarrow$ ndarray}}
+\pysigstopsignatures
+\sphinxAtStartPar
+\_summary\_
+\begin{quote}\begin{description}
+\sphinxlineitem{Raises}
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{NotImplementedError}} \textendash{} \_description\_
+
+\sphinxlineitem{Returns}
+\sphinxAtStartPar
+\_description\_
+
+\sphinxlineitem{Return type}
+\sphinxAtStartPar
+np.ndarray
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\index{update() (eflatun\_uav.filters.BaseFilter method)@\spxentry{update()}\spxextra{eflatun\_uav.filters.BaseFilter method}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{generated/eflatun_uav.filters:eflatun_uav.filters.BaseFilter.update}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{update}}}{\sphinxparam{\DUrole{n,n}{input\_state}\DUrole{p,p}{:}\DUrole{w,w}{  }\DUrole{n,n}{ndarray}}}{}
+\pysigstopsignatures
+\sphinxAtStartPar
+\_summary\_
+\begin{quote}\begin{description}
+\sphinxlineitem{Parameters}
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{input\_state}} (\sphinxstyleliteralemphasis{\sphinxupquote{np.ndarray}}) \textendash{} \_description\_
+
+\sphinxlineitem{Raises}
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{NotImplementedError}} \textendash{} \_description\_
 
 \end{description}\end{quote}
 
@@ -376,21 +403,6 @@ int
 \end{fulllineitems}
 
 
-\sphinxstepscope
-
-
-\section{eflatun\_uav.objects}
-\label{\detokenize{generated/eflatun_uav.objects:module-eflatun_uav.objects}}\label{\detokenize{generated/eflatun_uav.objects:eflatun-uav-objects}}\label{\detokenize{generated/eflatun_uav.objects::doc}}\index{module@\spxentry{module}!eflatun\_uav.objects@\spxentry{eflatun\_uav.objects}}\index{eflatun\_uav.objects@\spxentry{eflatun\_uav.objects}!module@\spxentry{module}}
-\sphinxstepscope
-
-
-\section{eflatun\_uav.optimizers}
-\label{\detokenize{generated/eflatun_uav.optimizers:module-eflatun_uav.optimizers}}\label{\detokenize{generated/eflatun_uav.optimizers:eflatun-uav-optimizers}}\label{\detokenize{generated/eflatun_uav.optimizers::doc}}\index{module@\spxentry{module}!eflatun\_uav.optimizers@\spxentry{eflatun\_uav.optimizers}}\index{eflatun\_uav.optimizers@\spxentry{eflatun\_uav.optimizers}!module@\spxentry{module}}
-\sphinxstepscope
-
-
-\section{eflatun\_uav.trackers}
-\label{\detokenize{generated/eflatun_uav.trackers:module-eflatun_uav.trackers}}\label{\detokenize{generated/eflatun_uav.trackers:eflatun-uav-trackers}}\label{\detokenize{generated/eflatun_uav.trackers::doc}}\index{module@\spxentry{module}!eflatun\_uav.trackers@\spxentry{eflatun\_uav.trackers}}\index{eflatun\_uav.trackers@\spxentry{eflatun\_uav.trackers}!module@\spxentry{module}}
 
 \chapter{Indices and tables}
 \label{\detokenize{index:indices-and-tables}}\begin{itemize}
@@ -417,9 +429,6 @@ int
 \item\relax\sphinxstyleindexentry{eflatun\_uav.filters}\sphinxstyleindexpageref{generated/eflatun_uav.filters:\detokenize{module-eflatun_uav.filters}}
 \item\relax\sphinxstyleindexentry{eflatun\_uav.helpers}\sphinxstyleindexpageref{generated/eflatun_uav.helpers:\detokenize{module-eflatun_uav.helpers}}
 \item\relax\sphinxstyleindexentry{eflatun\_uav.helpers.number\_generators}\sphinxstyleindexpageref{generated/eflatun_uav.helpers.number_generators:\detokenize{module-eflatun_uav.helpers.number_generators}}
-\item\relax\sphinxstyleindexentry{eflatun\_uav.objects}\sphinxstyleindexpageref{generated/eflatun_uav.objects:\detokenize{module-eflatun_uav.objects}}
-\item\relax\sphinxstyleindexentry{eflatun\_uav.optimizers}\sphinxstyleindexpageref{generated/eflatun_uav.optimizers:\detokenize{module-eflatun_uav.optimizers}}
-\item\relax\sphinxstyleindexentry{eflatun\_uav.trackers}\sphinxstyleindexpageref{generated/eflatun_uav.trackers:\detokenize{module-eflatun_uav.trackers}}
 \end{sphinxtheindex}
 
 \renewcommand{\indexname}{Index}

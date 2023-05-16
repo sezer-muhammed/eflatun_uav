@@ -16,7 +16,7 @@
   \item \spxentry{convert\_string\_to\_float()}\spxextra{in module eflatun\_uav.helpers.number\_generators}, 
 		\hyperpage{4}
   \item \spxentry{convert\_string\_to\_int()}\spxextra{in module eflatun\_uav.helpers.number\_generators}, 
-		\hyperpage{4}
+		\hyperpage{5}
 
   \indexspace
   \bigletter E
@@ -28,12 +28,6 @@
     \subitem \spxentry{module}, \hyperpage{4}
   \item \spxentry{eflatun\_uav.helpers.number\_generators}
     \subitem \spxentry{module}, \hyperpage{4}
-  \item \spxentry{eflatun\_uav.objects}
-    \subitem \spxentry{module}, \hyperpage{5}
-  \item \spxentry{eflatun\_uav.optimizers}
-    \subitem \spxentry{module}, \hyperpage{5}
-  \item \spxentry{eflatun\_uav.trackers}
-    \subitem \spxentry{module}, \hyperpage{5}
 
   \indexspace
   \bigletter M
@@ -42,8 +36,13 @@
     \subitem \spxentry{eflatun\_uav.filters}, \hyperpage{3}
     \subitem \spxentry{eflatun\_uav.helpers}, \hyperpage{4}
     \subitem \spxentry{eflatun\_uav.helpers.number\_generators}, \hyperpage{4}
-    \subitem \spxentry{eflatun\_uav.objects}, \hyperpage{5}
-    \subitem \spxentry{eflatun\_uav.optimizers}, \hyperpage{5}
-    \subitem \spxentry{eflatun\_uav.trackers}, \hyperpage{5}
+
+  \indexspace
+  \bigletter P
+  \item \spxentry{predict()}\spxextra{eflatun\_uav.filters.BaseFilter method}, \hyperpage{3}
+
+  \indexspace
+  \bigletter U
+  \item \spxentry{update()}\spxextra{eflatun\_uav.filters.BaseFilter method}, \hyperpage{3}
 
 \end{sphinxtheindex}

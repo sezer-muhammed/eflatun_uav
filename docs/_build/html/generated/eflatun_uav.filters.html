@@ -47,14 +47,13 @@
 <li class="toctree-l2 current"><a class="current reference internal" href="#">eflatun_uav.filters</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#eflatun_uav.filters.BaseFilter"><code class="docutils literal notranslate"><span class="pre">BaseFilter</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#eflatun_uav.filters.BaseFilter.__init__"><code class="docutils literal notranslate"><span class="pre">BaseFilter.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#eflatun_uav.filters.BaseFilter.predict"><code class="docutils literal notranslate"><span class="pre">BaseFilter.predict()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#eflatun_uav.filters.BaseFilter.update"><code class="docutils literal notranslate"><span class="pre">BaseFilter.update()</span></code></a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="eflatun_uav.helpers.html">eflatun_uav.helpers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="eflatun_uav.objects.html">eflatun_uav.objects</a></li>
-<li class="toctree-l2"><a class="reference internal" href="eflatun_uav.optimizers.html">eflatun_uav.optimizers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="eflatun_uav.trackers.html">eflatun_uav.trackers</a></li>
 </ul>
 </li>
 </ul>
@@ -111,6 +110,37 @@
 <li><p><strong>input_size</strong> (<em>List</em>) – _description_</p></li>
 <li><p><strong>output_size</strong> (<em>List</em>) – _description_</p></li>
 </ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="eflatun_uav.filters.BaseFilter.predict">
+<span class="sig-name descname"><span class="pre">predict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span></span></span><a class="reference internal" href="../_modules/eflatun_uav/filters.html#BaseFilter.predict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#eflatun_uav.filters.BaseFilter.predict" title="Permalink to this definition">¶</a></dt>
+<dd><p>_summary_</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>NotImplementedError</strong> – _description_</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>_description_</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>np.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="eflatun_uav.filters.BaseFilter.update">
+<span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/eflatun_uav/filters.html#BaseFilter.update"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#eflatun_uav.filters.BaseFilter.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>_summary_</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_state</strong> (<em>np.ndarray</em>) – _description_</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>NotImplementedError</strong> – _description_</p>
 </dd>
 </dl>
 </dd></dl>

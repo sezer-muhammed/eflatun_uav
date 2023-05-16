@@ -3,9 +3,6 @@
 \contentsline {section}{\numberline {1.1}eflatun\_uav.filters}{3}{section.1.1}%
 \contentsline {section}{\numberline {1.2}eflatun\_uav.helpers}{4}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}eflatun\_uav.helpers.number\_generators}{4}{subsection.1.2.1}%
-\contentsline {section}{\numberline {1.3}eflatun\_uav.objects}{5}{section.1.3}%
-\contentsline {section}{\numberline {1.4}eflatun\_uav.optimizers}{5}{section.1.4}%
-\contentsline {section}{\numberline {1.5}eflatun\_uav.trackers}{5}{section.1.5}%
 \contentsline {chapter}{\numberline {2}Indices and tables}{7}{chapter.2}%
-\contentsline {chapter}{Python Module Index}{9}{section*.7}%
-\contentsline {chapter}{Index}{11}{section*.8}%
+\contentsline {chapter}{Python Module Index}{9}{section*.9}%
+\contentsline {chapter}{Index}{11}{section*.10}%

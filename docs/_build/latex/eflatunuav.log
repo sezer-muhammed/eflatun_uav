@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.7)  14 MAY 2023 12:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.7)  16 MAY 2023 10:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -867,9 +867,9 @@ LaTeX Font Info:    Font shape `T1/txtt/m/it' in size <10> not available
 ]
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/txtt/b/n' in size <10> not available
-(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 194.
-LaTeX Font Info:    Trying to load font information for TS1+qtm on input line 2
-12.
+(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 173.
+LaTeX Font Info:    Trying to load font information for TS1+qtm on input line 1
+91.
 (c:/texlive/2022/texmf-dist/tex/latex/tex-gyre/ts1qtm.fd
 File: ts1qtm.fd 2009/09/25 v1.2 font definition file for TS1/qtm
 ) [3] [4] [5] [6
@@ -914,16 +914,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--20
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `eflatunuav.out' has not changed.
-(rerunfilecheck)             Checksum: 24D47657ABCA9442EFD91629293F1375;1487.
+(rerunfilecheck)             Checksum: 480418F387AF519B7266B33989078F55;1011.
  ) 
 Here is how much of TeX's memory you used:
- 16102 strings out of 476024
- 270115 string characters out of 5794017
- 1868382 words of memory out of 5000000
- 36131 multiletter control sequences out of 15000+600000
+ 16091 strings out of 476024
+ 269749 string characters out of 5794017
+ 1869382 words of memory out of 5000000
+ 36121 multiletter control sequences out of 15000+600000
  563561 words of font info for 73 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 72i,11n,76p,568b,741s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,11n,76p,568b,686s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}{c:/texlive/202
 2/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}<c:/texlive/2022/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/
@@ -934,10 +934,10 @@ e/qhvbi.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb><c
 nts/type1/public/tex-gyre/qtmri.pfb><c:/texlive/2022/texmf-dist/fonts/type1/pub
 lic/txfonts/t1xbtt.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/txfonts/t
 1xtt.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb>
-Output written on eflatunuav.pdf (15 pages, 176764 bytes).
+Output written on eflatunuav.pdf (15 pages, 176577 bytes).
 PDF statistics:
- 227 PDF objects out of 1000 (max. 8388607)
- 182 compressed objects within 2 object streams
- 30 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 201 PDF objects out of 1000 (max. 8388607)
+ 159 compressed objects within 2 object streams
+ 29 named destinations out of 1000 (max. 500000)
+ 77 words of extra memory for PDF output out of 10000 (max. 10000000)
 
