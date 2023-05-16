@@ -1,2 +1,2 @@
 from .helpers import number_generators
-import .filters
+from .filters import BaseFilter
